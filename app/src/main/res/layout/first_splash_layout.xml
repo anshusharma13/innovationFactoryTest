@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_class"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:id="@+id/ivFirstSplash"
+        android:scaleType="fitXY"
+        android:src="@drawable/norris_niman_unsplash" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                android:layout_marginStart="@dimen/_27sdp"
+                android:layout_weight=".6"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="@dimen/_25sdp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntu_italic"
+                    android:text="@string/skip"
+                    android:id="@+id/tvSkip"
+                    android:textColor="@color/white"
+                    android:textSize="18sp">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/second_splash_gradient"
+
+                android:layout_weight="1.4"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/llWorldText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_30sdp"
+
+                    android:layout_marginStart="27dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ubuntu_italic"
+                        android:text="@string/just_seconds_away_from"
+                        android:textColor="@color/white"
+                        android:textSize="24sp">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/ubuntu_bold"
+                        android:text="@string/a_world_of_luxury"
+                        android:textColor="@color/white"
+                        android:textSize="42sp">
+
+                    </TextView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llIndicator"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/dummyView"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="@dimen/_68sdp"
+                        android:layout_height="6dp"
+                        android:layout_marginStart="@dimen/_39sdp"
+                        android:background="@drawable/selected_rectangle_line">
+
+                    </View>
+
+                    <View
+                        android:layout_width="@dimen/_68sdp"
+                        android:layout_height="@dimen/_6sdp"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/unselected_rectangle_line">
+
+                    </View>
+
+                    <View
+                        android:layout_width="@dimen/_68sdp"
+                        android:layout_height="@dimen/_6sdp"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/unselected_rectangle_line">
+
+                    </View>
+
+
+                    <ImageView
+                        android:id="@+id/ivFirstSplashButton"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:src="@drawable/ic_add"
+                        android:contentDescription="@string/imageContent">
+
+                    </ImageView>
+
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/dummyView"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true">
+
+                </View>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+</FrameLayout>
+

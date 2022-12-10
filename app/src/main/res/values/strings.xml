@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">InnovationFactoryTest</string>
+    <string name="skip">Skip</string>
+    <string name="just_seconds_away_from">Just seconds away from</string>
+    <string name="a_world_of_luxury">A WORLD OF LUXURY</string>
+    <string name="your_entire_vacation_or_business_trip">Your entire vacation or business trip</string>
+    <string name="book_and_manage">BOOK &amp; MANAGE</string>
+    <string name="imageContent">ImageContent</string>
+    <string name="register_a_new_account">Register a new Account</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="repeat_password">Repeat Password</string>
+    <string name="create_account">Create Account</string>
+    <string name="create_account_to_start_your_first_plan_with_time2travel">Create account to start your first plan with Time2Travel</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="bfic">BFIC</string>
+    <string name="by_getting_started_you_acknowledge_and_agree_to_terms_of_use_and_privacy_policy">By getting started, you acknowledge and agree to Terms of Use and Privacy Policy</string>
+    <string name="or_you_can_login_with_one_of_your_accounts">or you can login with one of your accounts</string>
+</resources>
