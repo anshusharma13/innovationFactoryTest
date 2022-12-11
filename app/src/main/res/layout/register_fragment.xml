@@ -2,16 +2,14 @@
 
 
 <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:fillViewport="true"
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
 
-
-    <androidx.cardview.widget.CardView
-        xmlns:tools="http://schemas.android.com/tools"
+    <androidx.cardview.widget.CardView xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
@@ -58,6 +56,7 @@
             </TextView>
 
             <EditText
+                android:id="@+id/etFirstName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/_5sdp"
@@ -73,6 +72,7 @@
                 android:textColorHint="@color/edtTextHintColor" />
 
             <EditText
+                android:id="@+id/etLastName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
 
@@ -91,6 +91,7 @@
 
 
             <EditText
+                android:id="@+id/etEmailName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/_5sdp"
@@ -101,18 +102,18 @@
                 android:elevation="8dp"
                 android:fontFamily="@font/light_italic"
                 android:hint="@string/email"
-                android:inputType="textPersonName"
+                android:inputType="textEmailAddress"
                 android:paddingHorizontal="@dimen/_20sdp"
                 android:paddingVertical="@dimen/_12sdp"
                 android:textColorHint="@color/edtTextHintColor" />
 
 
             <EditText
+                android:id="@+id/etPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/_5sdp"
                 android:layout_marginTop="@dimen/_10sdp"
-
                 android:autofillHints="name"
                 android:background="@drawable/et_style"
                 android:elevation="8dp"
@@ -125,6 +126,7 @@
 
 
             <EditText
+                android:id="@+id/etConfirmPass"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/_5sdp"
@@ -184,31 +186,31 @@
                     android:layout_width="@dimen/_30sdp"
                     android:layout_height="@dimen/_30sdp"
                     android:layout_marginVertical="@dimen/_2sdp"
+                    android:contentDescription="@string/imageContent"
                     android:elevation="@dimen/_8sdp"
-                    android:gravity="center"
 
-                    android:src="@drawable/icons_apple"
-                    android:contentDescription="@string/imageContent" />
+                    android:gravity="center"
+                    android:src="@drawable/icons_apple" />
 
                 <ImageView
                     android:layout_width="@dimen/_30sdp"
                     android:layout_height="@dimen/_30sdp"
                     android:layout_marginHorizontal="@dimen/_40sdp"
                     android:layout_marginVertical="@dimen/_2sdp"
+                    android:contentDescription="@string/imageContent"
                     android:elevation="@dimen/_8sdp"
                     android:gravity="center"
-                    android:src="@drawable/google_icon"
-                    android:contentDescription="@string/imageContent" />
+                    android:src="@drawable/google_icon" />
 
                 <ImageView
                     android:id="@+id/imageButton1"
                     android:layout_width="@dimen/_30sdp"
                     android:layout_height="@dimen/_30sdp"
                     android:layout_marginVertical="@dimen/_2sdp"
+                    android:contentDescription="@string/imageContent"
                     android:elevation="@dimen/_8sdp"
                     android:gravity="center"
-                    android:src="@drawable/icon_facebook"
-                    android:contentDescription="@string/imageContent" />
+                    android:src="@drawable/icon_facebook" />
 
 
             </LinearLayout>
@@ -219,9 +221,9 @@
                 android:layout_gravity="center"
                 android:layout_marginHorizontal="@dimen/_26sdp"
                 android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_12sdp"
                 android:fontFamily="@font/ubuntu_regular"
                 android:gravity="center"
-                android:layout_marginBottom="@dimen/_12sdp"
                 android:text="@string/by_getting_started_you_acknowledge_and_agree_to_terms_of_use_and_privacy_policy"
                 android:textColor="#B3B3B3"
                 android:textSize="@dimen/_8sdp">

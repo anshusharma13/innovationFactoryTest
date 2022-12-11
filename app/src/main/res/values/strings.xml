@@ -19,4 +19,11 @@
     <string name="bfic">BFIC</string>
     <string name="by_getting_started_you_acknowledge_and_agree_to_terms_of_use_and_privacy_policy">By getting started, you acknowledge and agree to Terms of Use and Privacy Policy</string>
     <string name="or_you_can_login_with_one_of_your_accounts">or you can login with one of your accounts</string>
+    <string name="enter_valid_confirm_password">Enter Valid Confirm Password</string>
+    <string name="password_confirm_password_should_match">Confirm Password should match to password</string>
+    <string name="enter_valid_password">Enter Valid Password</string>
+    <string name="enter_valid_password_length">Password should greater than 8 digits</string>
+    <string name="enter_valid_name">Enter valid first name</string>
+    <string name="enter_valid_email">Enter valid email</string>
+    <string name="enter_valid_lastname">Enter valid last name</string>
 </resources>
