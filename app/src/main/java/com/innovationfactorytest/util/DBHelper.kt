@@ -9,6 +9,8 @@ import android.database.sqlite.SQLiteOpenHelper
 class DBHelper (context: Context, factory: SQLiteDatabase.CursorFactory?) :
     SQLiteOpenHelper(context, DATABASE_NAME, factory, DATABASE_VERSION) {
 
+    private var exist: Boolean=false
+
     // below is the method for creating a database by a sqlite query
     override fun onCreate(db: SQLiteDatabase) {
         // below is a sqlite query, where column names
@@ -73,6 +75,24 @@ class DBHelper (context: Context, factory: SQLiteDatabase.CursorFactory?) :
 
     }
 
+    fun isExist(strEmailAdd: String): Boolean {
+       val db = this.readableDatabase
+        try {
+            val cur = db.rawQuery(
+                "SELECT * FROM $TABLE_NAME WHERE $EMAIL_COL = '$strEmailAdd'",
+                null
+            )
+             exist = cur.count > 0
+            cur.close()
+            db.close()
+        }
+        catch (e:java.lang.Exception)
+        {
+
+        }
+
+        return exist
+    }
     companion object{
         // here we have defined variables for our database
 
