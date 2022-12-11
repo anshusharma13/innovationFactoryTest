@@ -4,17 +4,16 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
 import com.innovationfactorytest.R
 import com.innovationfactorytest.util.DBHelper
-import kotlinx.android.synthetic.main.activity_register.view.*
+import kotlinx.android.synthetic.main.login_frag.view.*
 
 class LoginFragment(var viewPager2: ViewPager2) : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
 
-        val v: View = inflater.inflate(R.layout.activity_register, container, false)
+        val v: View = inflater.inflate(R.layout.login_frag, container, false)
         v. btnLogin?.setOnClickListener {
 
                 // creating a DBHelper class

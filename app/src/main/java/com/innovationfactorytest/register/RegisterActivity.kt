@@ -8,13 +8,13 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayout
 import com.innovationfactorytest.R
-import kotlinx.android.synthetic.main.login_fragment.*
+import kotlinx.android.synthetic.main.register_act.*
 
 class RegisterActivity : AppCompatActivity() {
     var myAdapter: RegisterViewPagerAdapter? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.login_fragment)
+        setContentView(R.layout.register_act)
 
         window.apply {
             clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
